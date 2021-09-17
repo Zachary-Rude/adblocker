@@ -19,3 +19,17 @@ chrome.runtime.onInstalled.addListener(details => {
     chrome.runtime.setUninstallURL('https://ad-blocker.zacharyrude.repl.co/uninstall.html');
   }
 });
+
+let tab = chrome.tabs.query({ active: true, currentWindow: true });
+
+chrome.scripting.executeScript({
+  target: { tabId: tab.id },
+  function: blockAds
+});
+
+function blockAds() {
+  let ads = document.querySelectorAll("[class *= 'ad'], [class *= 'doubleclick'], [class *= 'Banner'], [class *= 'banner'], [class *= 'Ad'], [id *= 'ad'], [id *= 'doubleclick'], [id *= 'Banner'], [id *= 'banner'], [id *= 'Ad']");
+  ads.forEach(ad => {
+    ad.style.display = "none !important";
+  });
+}
