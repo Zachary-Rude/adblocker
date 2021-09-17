@@ -8,7 +8,7 @@ Since Ad Blocker has not been published to the [Chrome Web Store](https://chrome
 
 Once the ZIP archive has been downloaded, extract the `adblocker-master` folder. Since it is a Chrome extension, you need to have Google Chrome installed on your computer. If Chrome is not installed on your computer, download and install it from https://www.google.com/chrome/; otherwise, it will already be installed (e.g., if your're on a Chromebook or Android device), and you can simply launch it.
 
-Assuming that Chrome is installed, go to `chrome://extensions/`, click on the "Load unpacked" button, select the extracted `adblocker-master` folder, and your're all set!
+Assuming that Chrome is installed, go to `chrome://extensions/`, click on the "Load unpacked" button, select the extracted `adblocker-master` folder, and you're all set!
 
 ## **License**
 
