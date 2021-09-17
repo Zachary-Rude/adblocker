@@ -1,6 +1,6 @@
 {
   "name": "Ad Blocker",
-  "version": "1.5",
+  "version": "1.6",
   "description": "A simple ad blocker",
   "permissions": ["webRequest", "webRequestBlocking", "http://*/", "https://*/", "activeTab"],
   "background": {
