@@ -1,0 +1,3 @@
+[class*=ad], [class*=doubleclick], [class*=Banner], [class*=banner], [class*=Ad], [id*=ad], [id*=doubleclick], [id*=Banner], [id*=banner], [id*=Ad] {
+  display: none !important;
+}
