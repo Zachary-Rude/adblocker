@@ -1,3 +1,3 @@
-.ads, .ad, .adsbox, .doubleclick, .ad-placement, .carbon-ads, #ads, #ad, #adsbox, #doubleclick, #ad-placement, #carbon-ads {
+.ads, .ad, .adsbox, .doubleclick, .ad-placement, .carbon-ads, .top-ad, .bottom-ad, #ads, #ad, #adsbox, #doubleclick, #ad-placement, #carbon-ads, #top-ad, #bottom-ad {
   display: none !important;
 }
