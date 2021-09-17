@@ -20,16 +20,13 @@ chrome.runtime.onInstalled.addListener(details => {
   }
 });
 
-function blockAds() {
-  let ads = document.querySelectorAll("[class *= 'ad'], [class *= 'doubleclick'], [class *= 'Banner'], [class *= 'banner'], [class *= 'Ad'], [id *= 'ad'], [id *= 'doubleclick'], [id *= 'Banner'], [id *= 'banner'], [id *= 'Ad']");
-  ads.forEach(ad => {
-    ad.style.display = "none !important";
-  });
-}
 
 chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
   chrome.tabs.executeScript(
     tabs[0].id,
-    { code: "blockAds()" }
+    { code: `let ads = document.querySelectorAll("[class*=ad], [class*=doubleclick], [class*=Banner], [class*=banner], [class*=Ad], [id*=ad], [id*=doubleclick], [id*=Banner], [id*=banner], [id*=Ad]");
+ads.forEach(ad => {
+  ad.style.display = "none !important";
+});` }
   );
 });
