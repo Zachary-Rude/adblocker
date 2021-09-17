@@ -15,7 +15,7 @@ chrome.webRequest.onBeforeRequest.addListener(
 );
 
 chrome.runtime.onInstalled.addListener(details => {
-  if (details.reason == chrome.runtime.OnInstalledReason.INSTALL) {
-    chrome.runtime.setUninstallURL("https://ad-blocker.zacharyrude.repl.co/uninstall.html");
+  if (details.reason === chrome.runtime.OnInstalledReason.INSTALL) {
+    chrome.runtime.setUninstallURL('https://ad-blocker.zacharyrude.repl.co/uninstall.html');
   }
 });
