@@ -1,6 +1,6 @@
 {
   "name": "Ad Blocker",
-  "version": "1.4",
+  "version": "1.5",
   "description": "A simple ad blocker",
   "permissions": ["webRequest", "webRequestBlocking", "http://*/", "https://*/", "activeTab"],
   "background": {
@@ -9,5 +9,11 @@
   "browser_action": {
     "default_popup": "popup.html"
   },
-  "manifest_version": 2
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css": ["ads.css"]
+    }
+  ]
 }
